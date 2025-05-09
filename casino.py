@@ -38,9 +38,9 @@ if __name__ == '__main__':
                     break
                 case 'slots':
                     playercontinue = True
-                    while playercontinue == True:
-                        bank = slots.slots(bank)
-                        yn = input(f'Would you like to continue?\n\n>(y/n)')
+                    while playercontinue:
+                        bank = slots.spin_slots(bank)
+                        yn = input(f'Would you like to continue?\n\n{fmt('>(y/n)', 'terminal input')}')
                         playercontinue = yn == 'y'
                     clear()
 
@@ -52,4 +52,4 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"An error occurred: {e}")
 
-    input(fmt('Press ENTER to exit', 'terminal input'))
+    input(fmt('\nPress ENTER to exit', 'terminal input'))
