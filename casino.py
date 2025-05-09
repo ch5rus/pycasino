@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
         gamestate = True
         while gamestate:
-            gameselection = input(f'Welcome to the casino.\nYour current bank value is {fmt(bank, "money")}.\n\nWhat game do you wish to play?\n\n{fmt('>(21, highlow, slots, or exit?)', 'terminal input')} ')
+            gameselection = input(f'Welcome to the casino.\nYour current bank value is {fmt(bank, "money")}.\n\nWhat game do you wish to play?\n\n{fmt('>(21, highlow, slots, poker, or exit?)', 'terminal input')} ')
             match gameselection:
                 case 'exit':
                     break
