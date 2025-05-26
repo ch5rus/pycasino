@@ -26,8 +26,7 @@ def highlow_game(bank):
             (guess == 'l' and answer < estimate)
     ):
         print(f"\nJackpot! The true number was {answer}")
-        print(f"Deposit of {fmt(deposit, "money")} doubled to {fmt(deposit * 2, "money")} and added to bank!")
-        deposit = deposit * 2
+        print(f"Deposit of {fmt(deposit, "money")} added to bank!")
         bank = bank + deposit
         print(f"You have {fmt(bank, "money")} in your bank!")
     else:
